@@ -6,6 +6,7 @@ export default function Increment(){
         <div>
             <h2>Data for the useState example:{data}</h2>
             <button onClick={()=>setData(data+1)}>Update Data</button>
+            <hr/>
         </div>
     )
 }
