@@ -16,6 +16,10 @@ import UnMount from "./unMount";
 import UseEffect from "./useEffect";
 import Pure from "./pureComponent";
 import UseMemo from "./useMemo";
+import Bind from "./bind";
+import Ref from "./ref";
+import UseRef from "./useRef";
+import Parent from "./parentComponent";
 export default function App() {
   return (
     <>
@@ -25,12 +29,17 @@ export default function App() {
       <Student name={"Abishek"}/>
       <tr/>
       <Input/>
+      <tr/>
       {/* <Example/> */}
        {/* <DidUpdate/> */}
       {/* <UnMount/> */}
-      {/* <UseEffect/> */}
+      <UseEffect/>
       {/* <Pure/> */ }
-      <UseMemo/>
+      {/* <UseMemo/> */}
+      {/* <Bind />
+      <Ref/>
+      <UseRef />
+      <Parent/> */}
 
 
     </>

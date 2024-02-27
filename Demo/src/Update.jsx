@@ -18,10 +18,10 @@ export default class DidUpdate extends Component{
         }
         }
     }
-    componentWillUnmount(){
-        alert("Component unmounted");
-        console.warn("unmount called...")
-    }
+    // componentWillUnmount(){
+    //     alert("Component unmounted");
+    //     console.warn("unmount called...")
+    // }
     ClickEvent(){
         this.setState({count:this.state.count+1});
     }

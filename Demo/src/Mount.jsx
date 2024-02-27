@@ -5,10 +5,10 @@ export default class Example extends Component{
         console.warn("Constructor called");
         this.state={
             name:"Abishek"
-        }
     }
+}
     componentDidMount(){
-        console.warn("componentDidMount called");
+       console.warn("componentDidMount called");
     }
     render(){
         console.warn("render called");
