@@ -10,7 +10,13 @@ import { Develop } from "./demo";
 import Update from "./stateInClass";
 import Student from "./propsInClass";
 import Input from "./inputEvent";
-export default function list() {
+import Example from "./Mount";
+import DidUpdate from "./Update";
+import UnMount from "./unMount";
+import UseEffect from "./useEffect";
+import Pure from "./pureComponent";
+import UseMemo from "./useMemo";
+export default function App() {
   return (
     <>
       <Increment/>
@@ -19,6 +25,14 @@ export default function list() {
       <Student name={"Abishek"}/>
       <tr/>
       <Input/>
+      {/* <Example/> */}
+       {/* <DidUpdate/> */}
+      {/* <UnMount/> */}
+      {/* <UseEffect/> */}
+      {/* <Pure/> */ }
+      <UseMemo/>
+
+
     </>
 
   )
