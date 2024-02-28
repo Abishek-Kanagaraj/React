@@ -20,6 +20,12 @@ import Bind from "./bind";
 import Ref from "./ref";
 import UseRef from "./useRef";
 import Parent from "./parentComponent";
+import UseCallback from "./useCallback";
+import Toggle from "./toogle";
+import DataFetching from "./dataFetching";
+import Context from "./Context";
+
+
 export default function App() {
   return (
     <>
@@ -33,13 +39,17 @@ export default function App() {
       {/* <Example/> */}
        {/* <DidUpdate/> */}
       {/* <UnMount/> */}
-      <UseEffect/>
+      {/* <UseEffect/> */}
       {/* <Pure/> */ }
       {/* <UseMemo/> */}
       {/* <Bind />
       <Ref/>
       <UseRef />
       <Parent/> */}
+      {/* <UseCallback /> */}
+      {/* <Toggle /> */}
+      {/* <DataFetching/> */}
+      <Context/>
 
 
     </>
