@@ -1,11 +1,11 @@
 import Message, { MyButton } from "./list";
 import { ListGroup } from "./list";
-import  Welcome  from "./props";
+import Welcome from "./props";
 import PackingList from "./conditionalRendering";
-import User, {Member} from "./Component";
+import User, { Member } from "./Component";
 import Form from "./Events";
 import Increment from "./state";
-import Computer,{Device} from "./demo";
+import Computer, { Device } from "./demo";
 import { Develop } from "./demo";
 import Update from "./stateInClass";
 import Student from "./propsInClass";
@@ -28,6 +28,13 @@ import UseReducer from "./useReducer";
 import ComplexReducer from "./complexReducer";
 import CustomHook from "./customHook";
 import SampleForm from "./sampleForm";
+import ListKeys from "./listKeys";
+import LiftStateUp from "./liftStateUp";
+import Names from "./names"
+import ErrorBoundary from './errorBoundary';
+import ClickCounter from './clickCounter'
+import HoverCounter from './hoverCounter'
+
 
 export default function App() {
   return (
@@ -40,10 +47,10 @@ export default function App() {
       <Input/>
       <tr/> */}
       {/* <Example/> */}
-       {/* <DidUpdate/> */}
+      {/* <DidUpdate/> */}
       {/* <UnMount/> */}
       {/* <UseEffect/> */}
-      {/* <Pure/> */ }
+      {/* <Pure/> */}
       {/* <UseMemo/> */}
       {/* <Bind />
       <Ref/>
@@ -57,7 +64,19 @@ export default function App() {
       <ComplexReducer/> */}
       {/* <CustomHook /> */}
       {/* <SampleForm /> */}
-
+      {/* <ListKeys /> */}
+      <LiftStateUp />
+      <ErrorBoundary>
+        <Names name="Manoj" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Names name="Sherjeel" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Names name="Abishek" />
+      </ErrorBoundary>
+      <HoverCounter />
+      <ClickCounter />
 
     </>
 
