@@ -1,10 +1,10 @@
 import React from "react";
 
-function Button(props,children){
+function Button({handleClick,children}){
     console.log('Renders - ',children)
     return(
         <>
-        <button onClick={props.handleClick}>{children}
+        <button onClick={handleClick}>{children}
         </button>
         </>
     );

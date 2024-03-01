@@ -24,18 +24,21 @@ import UseCallback from "./useCallback";
 import Toggle from "./toogle";
 import DataFetching from "./dataFetching";
 import Context from "./Context";
-
+import UseReducer from "./useReducer";
+import ComplexReducer from "./complexReducer";
+import CustomHook from "./customHook";
+import SampleForm from "./sampleForm";
 
 export default function App() {
   return (
     <>
-      <Increment/>
+      {/* <Increment/>
       <Welcome name={"Abishek"}/>
       <Update/>
       <Student name={"Abishek"}/>
       <tr/>
       <Input/>
-      <tr/>
+      <tr/> */}
       {/* <Example/> */}
        {/* <DidUpdate/> */}
       {/* <UnMount/> */}
@@ -46,10 +49,14 @@ export default function App() {
       <Ref/>
       <UseRef />
       <Parent/> */}
-      {/* <UseCallback /> */}
+      <UseCallback />
       {/* <Toggle /> */}
       {/* <DataFetching/> */}
-      <Context/>
+      {/* <Context/> */}
+      {/* <UseReducer />
+      <ComplexReducer/> */}
+      {/* <CustomHook /> */}
+      {/* <SampleForm /> */}
 
 
     </>

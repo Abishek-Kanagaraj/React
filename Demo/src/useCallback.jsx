@@ -5,12 +5,12 @@ export default function UseCallback(){
     const [age,setAge]=useState(21)
     const [salary,setSalary]=useState(50000)
 
-    const increaseAge=useCallback(()=>{
+    const increaseAge=()=>{
         setAge(age+1);
-    }, [age])
-    const increaseSalary=useCallback(()=>{
+    }
+    const increaseSalary=()=>{
         setSalary(salary+1000);
-    }, [salary])
+    }
     return(
         <>
         <h2>UseCallback </h2>
