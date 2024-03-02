@@ -13,10 +13,10 @@ export default class DidUpdate extends Component{
     }
     shouldComponentUpdate(){
         console.warn("shouldComponentUpdate called",this.state.count);
-        {if(this.state.count<5){
+        if(this.state.count<5){
             return true;
         }
-        }
+        
     }
     // componentWillUnmount(){
     //     alert("Component unmounted");

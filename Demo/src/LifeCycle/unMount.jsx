@@ -1,5 +1,5 @@
 import { Component } from "react";
-import DidUpdate from "./Update";
+import DidUpdate from "./update";
 
 export default class UnMount extends Component{
     constructor(){

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useTitle from "./hooks/useTitle";
+import useTitle from "./useTitle";
 
 export default function CustomHook(){
     const [count,setCount]=useState(0)
