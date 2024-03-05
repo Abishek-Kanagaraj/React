@@ -1,13 +1,31 @@
 import React from 'react'
 
-import {Link} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import { useAuth } from './auth'
 
 export default function Nav() {
+    function navigateStyle({ isActive }) {
+        return ({
+            fontweight: isActive ? 'bold' : 'normal',
+            color: isActive ? 'blue' : 'black'
+
+        }
+        )
+
+    }
+    const auth=useAuth()
+
     return (
-        <div>
-            <Link to="/">Home</Link>
-            <br></br>
-            <Link to="/about">About</Link>
-        </div>
+        <nav className='main'>
+            <NavLink style={navigateStyle} to="/">Home</NavLink>
+            <NavLink style={navigateStyle} to="/about">About</NavLink>
+            <NavLink style={navigateStyle} to="/products">Products</NavLink>
+            <NavLink style={navigateStyle} to="/profile">Profile</NavLink>
+            {
+                !auth.user &&(
+                    <NavLink style={navigateStyle} to="/login">Login</NavLink>
+                )
+            }
+        </nav>
     )
 }

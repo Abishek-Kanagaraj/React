@@ -81,9 +81,9 @@ export default function App() {
       </ErrorBoundary> */}
       {/* <HoverCounter />
       <ClickCounter /> */}
-      {/* <Router>
+      <Router>
         <Routing />
-      </Router> */}
+      </Router>
       <DynamicRouting />
 
 
